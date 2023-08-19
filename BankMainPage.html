@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="text-5xl text-center font-bold mt-8"><span class="text-sky-700">Bank</span> Calculate Site</h1>
+        </nav>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-orange-700 p-8 rounded-lg">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class="text-5xl">$<span  id="show-depo">00</span></h2>
+                </div>
+                <div class="bg-sky-700 p-8 rounded-lg">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-5xl">$<span  id="show-wthd">00</span></h2>
+                </div>
+                <div class="bg-purple-700 p-8 rounded-lg">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-5xl">$<span  id="show-total">00</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-14">
+            <div class="grid grid-cols-2 gap-6 w-9/12 mx-auto text-white">
+                <div class="bg-emerald-700 p-8 rounded-lg">
+                    <h4 class="text-2xl mb-3 font-bold">Deposit Ammount</h4>
+                    <input id="depo-num" class="text-black w-9/12 block rounded-md pl-4 py-2" type="email" name="" id="" placeholder="Enter the ammount">
+                    <button id="btn-deposit" class="bg-orange-500 hover:bg-sky-500 text-base text-white px-3 py-2 rounded-md w-28 mt-6 font-extrabold">Submit</button>
+                </div>
+                <div class="bg-pink-700 p-8 rounded-lg">
+                    <h4 class="text-2xl mb-3 font-bold">Withdraw Ammount</h4>
+                    <input id="wthd-num" class="text-black w-9/12 block mb-4 rounded-md pl-4 py-2" type="email" name="" id="" placeholder="Enter the ammount">
+                    <button id="btn-withdraw" class="bg-orange-500 hover:bg-sky-500 text-base text-white px-3 py-2 rounded-md w-28 mt-2 font-extrabold">Submit</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="Bankjs2.js"></script>
+</body>
+</html>
