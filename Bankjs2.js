@@ -9,7 +9,7 @@ document.getElementById('btn-deposit').addEventListener('click',function(){
     // step 4 changed the depo value in box
     const gettototalval = document.getElementById('show-total')
     //step5 - prev in depo + crnt depo = total balance
-    const total = parseInt(depo) + parseInt(prevdepoval) + parseInt(gettototalval.innerText)
+    const total = parseInt(depo) + parseInt(gettototalval.innerText)
     //step-6 update the total balance
     gettototalval.innerText = total
 })
